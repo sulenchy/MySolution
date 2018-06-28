@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel server -d lib"
+    "build": "babel server -d lib",
+    "start": " babel server -d lib && babel-node server/app.js",
+    "dev": "nodemon server/app.js --exec babel-node"
   },
   "keywords": [
     "Javascript",
@@ -17,7 +19,8 @@
   "author": "sulenchy",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
