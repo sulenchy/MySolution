@@ -3,9 +3,10 @@
   
     var CACHE_NAME = 'my-cache';
     var urlsToCache = [
-      '.',
       'index.html',
-      'css/styles.css'
+      'app.js',
+      'css/index.css',
+      'js/index.js',
     ];
   
     self.addEventListener('install', function(event) {
