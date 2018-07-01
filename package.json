@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel server -d lib",
-    "start": " babel server -d lib && babel-node server/app.js",
-    "dev": "nodemon server/app.js --exec babel-node"
+    "build": "babel public -d lib",
+    "start": " babel public -d lib && babel-node main.js",
+    "dev": "nodemon main.js --exec babel-node"
   },
   "keywords": [
     "Javascript",
